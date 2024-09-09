@@ -53,6 +53,8 @@ jobs:
 
       - name: Trunk Check
         uses: trunk-io/trunk-action@v1
+        with:
+          arguments: -a --filter=eslint
 
       # - name: format
       #   run: pnpm check:format
